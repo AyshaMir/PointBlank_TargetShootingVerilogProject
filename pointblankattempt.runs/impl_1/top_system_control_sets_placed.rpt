@@ -1,0 +1,115 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri Dec 19 00:06:13 2025
+| Host         : DESKTOP-V8D55GU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_system_control_sets_placed.rpt
+| Design       : top_system
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    37 |
+|    Minimum number of control sets                        |    37 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   140 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    37 |
+| >= 0 to < 4        |     7 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |    12 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    12 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             147 |           69 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             285 |           90 |
+| Yes          | No                    | No                     |              13 |            9 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              47 |           17 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+-----------------------------------+---------------------------------------------+------------------+----------------+--------------+
+|    Clock Signal   |           Enable Signal           |               Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+-----------------------------------+---------------------------------------------+------------------+----------------+--------------+
+|  clk100_IBUF_BUFG | db_start/prevstate                |                                             |                1 |              1 |         1.00 |
+|  clk100_IBUF_BUFG | score_inst/sensor[0].db/prevstate |                                             |                1 |              1 |         1.00 |
+|  clk100_IBUF_BUFG | score_inst/sensor[1].db/prevstate |                                             |                1 |              1 |         1.00 |
+|  clk100_IBUF_BUFG | score_inst/sensor[2].db/prevstate |                                             |                1 |              1 |         1.00 |
+|  clk100_IBUF_BUFG | score_inst/sensor[3].db/prevstate |                                             |                1 |              1 |         1.00 |
+|  clk100_IBUF_BUFG | score_inst/sensor[4].db/prevstate |                                             |                1 |              1 |         1.00 |
+|  clk100_IBUF_BUFG | score_inst/sensor[5].db/prevstate |                                             |                1 |              1 |         1.00 |
+|  clk100_IBUF_BUFG | score_inst/score[5]_i_2_n_0       | db_start/SR[0]                              |                3 |              4 |         1.33 |
+|  clk25            |                                   | vga_inst/shelf_addr[4]_i_1_n_0              |                2 |              5 |         2.50 |
+|  clk25            |                                   | vga_inst/welcome_txt/text_on_reg_1          |                3 |              5 |         1.67 |
+|  clk100_IBUF_BUFG | timer_inst/count[5]_i_2_n_0       | timer_inst/count[5]_i_1_n_0                 |                4 |              6 |         1.50 |
+|  clk25            |                                   | vga_inst/cans[5].can_i/color[7]_i_2_0       |                2 |              6 |         3.00 |
+|  clk100_IBUF_BUFG | db_start/E[0]                     |                                             |                2 |              6 |         3.00 |
+|  clk25            |                                   | vga_inst/cans[2].can_i/color[7]_i_1__3_n_0  |                2 |              8 |         4.00 |
+|  clk25            |                                   | vga_inst/cans[3].can_i/color[7]_i_1__2_n_0  |                3 |              8 |         2.67 |
+|  clk25            |                                   | vga_inst/cans[4].can_i/color[7]_i_1__1_n_0  |                2 |              8 |         4.00 |
+|  clk25            |                                   | vga_inst/cans[5].can_i/color[7]_i_1__0_n_0  |                4 |              8 |         2.00 |
+|  clk25            |                                   | vga_inst/shelf2/color[7]_i_1_n_0            |                2 |              8 |         4.00 |
+|  clk25            |                                   | vga_inst/bunting/color[7]_i_1_n_0           |                4 |              8 |         2.00 |
+|  clk25            |                                   | vga_inst/shelf1/color[7]_i_1_n_0            |                3 |              8 |         2.67 |
+|  clk25            |                                   | vga_inst/cans[0].can_i/color[7]_i_1__5_n_0  |                2 |              8 |         4.00 |
+|  clk25            |                                   | vga_inst/cans[1].can_i/color[7]_i_1__4_n_0  |                2 |              8 |         4.00 |
+|  clk100_IBUF_BUFG |                                   | db_start/SR[0]                              |                5 |              8 |         1.60 |
+|  clk25            |                                   | vga_inst/sync/v_count                       |                3 |              9 |         3.00 |
+|  clk25            | vga_inst/sync/v_count             | vga_inst/sync/v_count[9]_i_1_n_0            |                3 |              9 |         3.00 |
+|  clk100_IBUF_BUFG |                                   | score_inst/sensor[0].db/count[0]_i_1__1_n_0 |                5 |             18 |         3.60 |
+|  clk100_IBUF_BUFG |                                   | score_inst/sensor[1].db/count[0]_i_1__2_n_0 |                5 |             18 |         3.60 |
+|  clk100_IBUF_BUFG |                                   | score_inst/sensor[2].db/count[0]_i_1__3_n_0 |                5 |             18 |         3.60 |
+|  clk100_IBUF_BUFG |                                   | score_inst/sensor[3].db/count[0]_i_1__4_n_0 |                5 |             18 |         3.60 |
+|  clk100_IBUF_BUFG |                                   | score_inst/sensor[4].db/count[0]_i_1__5_n_0 |                5 |             18 |         3.60 |
+|  clk100_IBUF_BUFG |                                   | score_inst/sensor[5].db/count[0]_i_1__6_n_0 |                5 |             18 |         3.60 |
+|  clk100_IBUF_BUFG |                                   | db_start/count[0]_i_1__0_n_0                |                5 |             18 |         3.60 |
+|  clk100_IBUF_BUFG |                                   |                                             |                8 |             23 |         2.88 |
+|  clk100_IBUF_BUFG |                                   | score_inst/game_over_reg_1[0]               |                8 |             27 |         3.38 |
+|  clk100_IBUF_BUFG |                                   | timer_inst/div[26]_i_1_n_0                  |                8 |             27 |         3.38 |
+|  clk100_IBUF_BUFG | delay_done_reg_inv_n_0            | db_start/SR[0]                              |                7 |             28 |         4.00 |
+|  clk25            |                                   |                                             |               61 |            124 |         2.03 |
++-------------------+-----------------------------------+---------------------------------------------+------------------+----------------+--------------+
+
+

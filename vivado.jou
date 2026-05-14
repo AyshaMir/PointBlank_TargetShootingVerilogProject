@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu May 14 22:52:53 2026
+# Process ID: 27028
+# Current directory: C:/Users/T490/pointblankattempt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8 C:\Users\T490\pointblankattempt\pointblankattempt.xpr
+# Log file: C:/Users/T490/pointblankattempt/vivado.log
+# Journal file: C:/Users/T490/pointblankattempt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/T490/pointblankattempt/pointblankattempt.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu May 14 22:52:53 2026
+# Process ID: 27028
+# Current directory: C:/Users/T490/pointblankattempt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8 C:\Users\T490\pointblankattempt\pointblankattempt.xpr
+# Log file: C:/Users/T490/pointblankattempt/vivado.log
+# Journal file: C:/Users/T490/pointblankattempt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/T490/pointblankattempt/pointblankattempt.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/T490/Desktop/DLD Proj/memconvert/bunting45.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/T490/Desktop/DLD Proj/memconvert/shelf1.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/T490/Desktop/DLD Proj/memconvert/can.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:15 . Memory (MB): peak = 1029.441 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 14 23:05:39 2026...

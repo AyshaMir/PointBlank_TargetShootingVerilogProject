@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Dec 16 22:34:19 2025
+# Process ID: 19672
+# Current directory: C:/Users/T490/pointblankattempt/pointblankattempt.runs/can_bram_synth_1
+# Command line: vivado.exe -log can_bram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source can_bram.tcl
+# Log file: C:/Users/T490/pointblankattempt/pointblankattempt.runs/can_bram_synth_1/can_bram.vds
+# Journal file: C:/Users/T490/pointblankattempt/pointblankattempt.runs/can_bram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source can_bram.tcl -notrace
